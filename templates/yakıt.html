@@ -19,28 +19,28 @@
   </header>
   <main>
     {% block content %}
-    <h2 class="main__title">Hangi sıklıkta balık eti tüketiyorsunuz?</h2>
+    <h2 class="main__title">Isınmak için ne tür bir yakıt kullanıyorsunuz?</h2>
     <ul class="list" id="list">
       <li class="list__item">
         <a href={{device + "/1" }}>
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Nadiren</span></a>
+          <span>Doğalgaz</span></a>
       </li>
       <!--Görev #2 -->
       <li class="list__item">
         <a href={{device + "/2" }}> 
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Bazen</span></a>
+          <span>Odun</span></a>
       </li>
       <li class="list__item">
         <a href={{device + "/3" }}>
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Sık Sık</span></a>
+          <span>Kömür</span></a>
       </li>
       <li class="list__item">
         <a href={{device + "/4" }}>
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Çok Sık</span></a>
+          <span>Mazot/akaryakıt</span></a>
     </ul>
     {% endblock %}
   </main>

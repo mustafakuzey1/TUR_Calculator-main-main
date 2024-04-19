@@ -19,29 +19,38 @@
   </header>
   <main>
     {% block content %}
-    <h2 class="main__title">Hangi sıklıkta balık eti tüketiyorsunuz?</h2>
+    <h2 class="main__title">Araçla haftada kaç km gidiyorsunuz?</h2>
     <ul class="list" id="list">
       <li class="list__item">
         <a href={{device + "/1" }}>
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Nadiren</span></a>
+          <span>Araç kullanmıyorum</span></a>
       </li>
+
       <!--Görev #2 -->
       <li class="list__item">
         <a href={{device + "/2" }}> 
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Bazen</span></a>
+          <span>1-25km</span></a>
       </li>
+
       <li class="list__item">
         <a href={{device + "/3" }}>
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Sık Sık</span></a>
+          <span>25-50km</span></a>
       </li>
       <li class="list__item">
         <a href={{device + "/4" }}>
           <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Çok Sık</span></a>
-    </ul>
+          <span>50-75km</span></a>
+
+      </li>
+      <li class="list__item">
+        <a href={{device + "/5" }}>
+          <img class="item__img" src="../../static/img/light.svg" alt="light">
+          <span>100km'den fazla</span></a> 
+            
+
     {% endblock %}
   </main>
   <footer>

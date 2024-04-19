@@ -29,7 +29,7 @@ def electronics(size, lights):
                             lights = lights                           
                            )
 
-# Üçüncü sayfa
+# Dördüncü sayfa
 @app.route('/<size>/<lights>/<device>')
 def fourth(size, lights,device):
     return render_template(
@@ -39,6 +39,33 @@ def fourth(size, lights,device):
                             device = device
                                    
                            )
+
+#Beşinci sayfa
+@app.route('/<size>/<lights>/<device>/<fourth>')
+def sut (size, lights,device,fourth):
+    return render_template(      
+                            'süt_ürünleri.html',                 
+                            size = size, 
+                            lights = lights,
+                            device = device,
+                            fourth = fourth                           
+                           )
+
+
+#Altıncı sayfa
+@app.route('/<size>/<lights>/<device>/<fourth>/<sut>')
+def evdek (size, lights,device,fourth,sut):
+    return render_template(      
+                            'ev_dekorasyon.html',                 
+                            size = size, 
+                            lights = lights,
+                            device = device,
+                            fourth = fourth,
+                            sut = sut
+                           )
+
+
+
 
 
 #  # Hesaplama

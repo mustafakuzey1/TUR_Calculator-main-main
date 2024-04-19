@@ -7,7 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../../static/css/style.css">
+  <link rel="stylesheet" href="../../../../static/css/style.css">
   <title>ekolojik ayak izi hesaplayıcısı</title>
 </head>
 <body>
@@ -19,28 +19,28 @@
   </header>
   <main>
     {% block content %}
-    <h2 class="main__title">Hangi sıklıkta balık eti tüketiyorsunuz?</h2>
+    <h2 class="main__title">Evinizin dekorasyonu ve bakımı için aylık ne kadar para harcıyorsunuz? </h2>
     <ul class="list" id="list">
       <li class="list__item">
         <a href={{device + "/1" }}>
-          <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Nadiren</span></a>
+          <img class="item__img" src="../../../../static/img/light.svg" alt="light">
+          <span>200TL'den az </span></a>
       </li>
       <!--Görev #2 -->
       <li class="list__item">
         <a href={{device + "/2" }}> 
-          <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Bazen</span></a>
+          <img class="item__img" src="../../../../static/img/light.svg" alt="light">
+          <span>200-400Tl</span></a>
       </li>
       <li class="list__item">
         <a href={{device + "/3" }}>
-          <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Sık Sık</span></a>
+          <img class="item__img" src="../../../../static/img/light.svg" alt="light">
+          <span>400-800TL</span></a>
       </li>
       <li class="list__item">
         <a href={{device + "/4" }}>
-          <img class="item__img" src="../../static/img/light.svg" alt="light">
-          <span>Çok Sık</span></a>
+          <img class="item__img" src="../../../../static/img/light.svg" alt="light">
+          <span>800Tl'den daha fazla</span></a>
     </ul>
     {% endblock %}
   </main>
